@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<GameSettings>
+    <SysParams dietime="12.0" maxlevel="3" />
+  
+    <!-- Masodpercenkent ennyi metert tesz meg (ehez meg hozzajohet a skill es egyeb modosito! -->
+    <Flag singlespeed="2.0" multispeed="0.5" />
+  
+    <PreLoadResources enable="yes" />
+
+    <FireDamage in="0.1" out="0.05" sec="3" max="1.5" />
+
+    <CritBuffDuration sec="30"/>
+
+    <Ragdoll enable="true" />
+    <KeepWrecksInGame enable="false" />
+    <ModelInconsistencyHack enable="false" />
+    <SightRangeMultiplierForCoverSearch value="0.4" />
+
+    <EmitTimes>
+      <Shoot>
+        <SMG time="403" />
+        <Sniper time="838" />
+        <MG time="57" />
+        <Bazooka time="290" />
+        <Mortar time="4268" />
+        <Flamethrower time="208" />
+      </Shoot>
+      <Grenade>
+        <SMG time="1362" />
+        <Sniper time="1362" />
+        <MG time="1362" />
+        <Bazooka time="1362" />
+        <Mortar time="1362" />
+        <Flamethrower time="1362" />
+      </Grenade>
+    </EmitTimes>
+  
+    <DamagePercentToStoredEntity damage="0.1" />
+    <DeffensiveSquadDamagePercent damage="0.7" />
+    <KneelCoverSquadDamagePercent damage="0.7" />
+    <StandCoverSquadDamagePercent damage="0.7" />
+    <ExposedSquadDamagePercent damage="1.3" /> 
+    <EasyLevelDamageMultiplier value="1.8" /> 
+    <MediumLevelDamageMultiplier value="1.0" /> 
+    <HardLevelDamageMultiplier value="1.0" /> 
+
+    <RepairSettings CriticalHPPercent="0.3" CriticalAmmoPercent="0.2" />
+    <Levels>
+        <Level xp="0" level="0" />
+        <Level xp="750" level="1" />
+        <Level xp="2000" level="2" />
+        <Level xp="4000" level="3" />
+
+        <ArmorBonuses>
+            <ArmorBonus level="0" bonus="1.0" />
+            <ArmorBonus level="1" bonus="1.0" />
+            <ArmorBonus level="2" bonus="1.0" />
+            <ArmorBonus level="3" bonus="1.0" />
+        </ArmorBonuses>
+        <DamageBonuses>
+            <DamageBonus level="0" bonus="1.0" />
+            <DamageBonus level="1" bonus="1.2" />
+            <DamageBonus level="2" bonus="1.5" />
+            <DamageBonus level="3" bonus="1.75" />
+        </DamageBonuses>
+        <HPBonuses>
+            <HPBonus level="0" bonus="1.0" />
+            <HPBonus level="1" bonus="1.2" />
+            <HPBonus level="2" bonus="1.5" />
+            <HPBonus level="3" bonus="1.75" />
+        </HPBonuses>
+        <SuppressDecreases>
+            <SuppressDecrease level="0" decrease="3" />
+            <SuppressDecrease level="1" decrease="4" />
+            <SuppressDecrease level="2" decrease="5" />
+            <SuppressDecrease level="3" decrease="6" />
+        </<SuppressDecreases>
+    </Levels>
+    <Squad membernumber="5" SquadLeaderDeathAfter="20" />
+
+    <ExternalHelp>
+        <Cannonade damage="150.0" radius="10.0" armordamage="5.0" />
+        <NapalmBomber damage="105.0" radius="30.0" armordamage="30.0" />
+    </ExternalHelp>
+    
+    <Prestige PrestigeGetTime="10" />
+    <UnitBuild queuesize="20" />
+
+  <!--    regi
+    <InGameCameraSettings>
+        <Zoom min="28.0" max="75.0" />
+        <Direction min="0.0" max="0.0" />
+        <Elevation min="28.0" max="89.0" minatzoommax="42.0" />
+        <Speed zoom="10.0" rotate="0.5" elevate="0.15" move="1.0" />
+        <KeySpeed zoom="0.5" rotate="1.0" elevate="1.0" move="6.0" />
+        <Autoscroll Enable="true" BorderX="2" BorderY="2"/>
+    </InGameCameraSettings>
+  -->
+
+
+<!-- Tom szerint -->
+    <InGameCameraSettings>
+        <Zoom min="1.0" max="200.1" />
+        <Direction min="0.0" max="0.0" />
+        <Elevation min="1.0" max="100.0" minatzoommax="0.1" />
+        <Speed zoom="10.0" rotate="0.5" elevate="0.15" move="1.0" />
+        <KeySpeed zoom="1.2" rotate="20.0" elevate="50.0" move="6.0" />
+        <Autoscroll Enable="true" BorderX="-50" BorderY="-50"/>
+        <ViewParameters FOV="45.0" NearPlane="1.0" FarPlane = "500.0" ViewExtension = "4.0" />
+    </InGameCameraSettings>
+
+
+     <BattleMusicSettings
+            BattleIncreaseTime = "1.0"
+            BattleDecreaseTime = "5.0"
+            BattleTime = "10.0"
+     />
+
+<!-- 
+  Mazenak magyarazat:
+    Cutoff parameterek:
+-->
+     <SoundSettings
+           MaxDistanceMultiply = "6.5"
+           CutoffMinimum = "20.0"
+           CutoffStartDist = "0.0"
+           CutoffBreakDist = "200.0"
+           CutoffBreakHz = "2031.0"
+           CutoffEndDist = "600.0"
+           CutoffEndHz = "100.0"
+           EngineRPMMinimum = "0.350"
+           EngineRPMSmooth = "0.175"
+           EngineLoadScale = "7.040"
+           EngineLoadSmooth = "0.0030" 
+    />
+
+    <Score
+        TimePenalty = "1.0"
+        TimePenaltyIncrease = "0.01"
+        XPMultiplier = "1.0"
+        KillMultiplier = "0.0"
+        LossMultiplier = "1.0"
+        ObjectiveMultiplier = "10.0"
+        CaptureMultiplier = "0.0"
+        EasyDifficultyMultiplier = "0.7"
+        NormalDifficultyMultiplier = "1.0"
+        HardDifficultyMultiplier = "1.5"
+    />
+
+    <MultiScore
+        TimePenalty = "1.0"
+        TimePenaltyIncrease = "0.01"
+        XPMultiplier = "1.0"
+        KillMultiplier = "1.0"
+        LossMultiplier = "0.1"
+        ObjectiveMultiplier = "10.0"
+        CaptureMultiplier = "0.1"
+        EasyDifficultyMultiplier = "0.7"
+        NormalDifficultyMultiplier = "1.0"
+        HardDifficultyMultiplier = "1.5"
+    />
+
+    <WinLooseCondition
+        POILostTime = "60"
+    />
+
+    <UnitDisplay>
+        <AlwaysShowHPBar enable = "true" />
+        <FloatingText
+            FloatingTextDistance = "20"
+            FloatHeight = "200"
+            FloatDuration = "15000"
+        >
+            <!-- FloatTypes: All, Critical, None -->
+            <FloatType>All</FloatType>
+        </FloatingText>
+    </UnitDisplay>
+
+</GameSettings>
